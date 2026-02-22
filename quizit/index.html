@@ -152,6 +152,16 @@ document.getElementById("verification-cta-button")
 
     <!-- Scripts carregados ao final para melhor performance -->
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+ <script>
+document.getElementById("verification-cta-button")
+  .addEventListener("click", function() {
+
+    if (typeof ttq !== "undefined") {
+      ttq.track('Lead');
+    }
+
+});
+</script>
     
     <script>
         // Inicialização quando o DOM estiver carregado
@@ -178,11 +188,7 @@ document.getElementById("verification-cta-button")
                 });
             }
             
-            // Rastreamento de eventos para analytics
-            document.getElementById('verification-cta-button').addEventListener('click', function() {
-                if (typeof ttq !== 'undefined') {
-                    ttq.track('ClickButton', {});
-                }
+
             });
         });
     </script>
