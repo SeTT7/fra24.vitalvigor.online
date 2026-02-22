@@ -1,201 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+ <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D6CLBFBC77U43E96IQ9G');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrivez-vous - Cours de Paysagisme Digital</title>
+    <meta name="description" content="accéder au contenu">
+    <title>=Content</title>
+    
+    <!-- Pré-carregamento de recursos essenciais -->
+    <link rel="preload" href="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/67d20d15b7ef8e55f55e284e/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/67d0ec6327e969e4dd7cee46/main.m3u8" as="fetch">
+    
+    <!-- Pré-conexão para melhor performance -->
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    
     <style>
+        /* ===== RESET E ESTILOS BASE ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
-            background-color: #051428;
-            color: white;
+            font-family: 'Arial', sans-serif;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: black;
             padding: 20px;
+            line-height: 1.5;
         }
-        
-        .container {
-            max-width: 500px;
-            width: 100%;
+
+        /* ===== CONTAINER PRINCIPAL ===== */
+        .age-verification-container {
             text-align: center;
-        }
-        
-        .image-container {
+            max-width: 400px;
             width: 100%;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 20px;
+            animation: fadeIn 0.5s ease-in-out;
         }
-        
-        .image-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px dashed rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            color: rgba(255, 255, 255, 0.5);
+
+        /* ===== ELEMENTOS DE TEXTO ===== */
+        .verification-title {
+            color: #cc0000;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
         }
-        
-        h1 {
+
+        .verification-instruction {
+            color: white;
             font-size: 24px;
+            font-weight: bold;
             margin-bottom: 30px;
             line-height: 1.4;
-            font-weight: 600;
         }
-        
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            text-align: left;
-        }
-        
-        label {
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        .email-input {
-            padding: 16px;
-            font-size: 16px;
-            border-radius: 30px;
-            border: none;
-            background-color: rgba(255, 255, 255, 0.9);
-            color: #051428;
-        }
-        
-        .btn {
-            background-color: #ff4081;
+
+        /* ===== BOTÕES E CALLS-TO-ACTION ===== */
+        .primary-button, 
+        #verification-cta-button {
+            background-color: #cc0000;
             color: white;
             border: none;
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            width: 100%;
-        }
-        
-        .btn:hover {
-            background-color: #e91e63;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-        }
-        
-        .success-message {
-            display: none;
-            background-color: rgba(76, 175, 80, 0.2);
-            border: 1px solid #4CAF50;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .success-message p {
+            padding: 12px 40px;
             font-size: 18px;
-            color: #4CAF50;
-            font-weight: 500;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
         }
-        
+
+        .primary-button:hover, 
+        #verification-cta-button:hover {
+            background-color: #b30000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ===== CONTAINER DO BOTÃO PRINCIPAL ===== */
+        .cta-button-container {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ===== ANIMAÇÕES ===== */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @media (min-width: 768px) {
-            .form-container {
-                flex-direction: row;
+            from { 
+                opacity: 0; 
+                transform: translateY(10px); 
             }
-            
-            .input-group {
-                flex: 1;
-            }
-            
-            .btn {
-                width: auto;
-                margin-top: 28px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 22px;
-            }
-            
-            .image-container {
-                height: 200px;
-            }
-            
-            .email-input, .btn {
-                padding: 14px 20px;
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Inscrivez-vous en entrant votre email ci-dessous</h1>
+    <!-- Conteúdo principal da página -->
+     <main class="age-verification-container">
+        <h1 class="verification-title">Accès au Contenu:</h1>
+        <p class="verification-instruction">Cliquez sur le bouton ci-dessous pour visionner la vidéo explicative</p>
         
-        <div class="form-container">
-            <div class="input-group">
-                <label for="email">Votre email principal</label>
-                <input type="email" id="email" class="email-input" placeholder="Votre meilleur email">
-            </div>
-            <button class="btn" id="submit-btn">Envoyer</button>
+        <div class="cta-button-container"> 
+            <a href="https://fra24.vitalvigor.online/" id="verification-cta-button" class="primary-button">
+                Voir l'explication
+            </a>
         </div>
-        
-        <div class="success-message" id="success-message">
-            <p>Parfait, il ne vous reste plus qu'à vérifier votre email !</p>
-        </div>
-    </div>
+    </main>
 
+    <!-- Scripts carregados ao final para melhor performance -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const submitBtn = document.getElementById('submit-btn');
-            const successMessage = document.getElementById('success-message');
-            const emailInput = document.getElementById('email');
+        // Inicialização quando o DOM estiver carregado
+        document.addEventListener("DOMContentLoaded", function() {
+            // Função para capturar parâmetros da URL
+            function collectUrlParameters(url) {
+                const urlObj = new URL(url);
+                let paramString = "";
+
+                urlObj.searchParams.forEach((value, key) => {
+                    paramString += `${paramString ? '&' : ''}${key}=${value}`;
+                });
+
+                return paramString;
+            }
+
+            // Aplicar parâmetros da URL a todos os links
+            const urlParams = collectUrlParameters(window.location.href);
+
+            if (urlParams) {
+                document.querySelectorAll("a").forEach(link => {
+                    const separator = link.href.includes("?") ? "&" : "?";
+                    link.href += `${separator}${urlParams}`;
+                });
+            }
             
-            submitBtn.addEventListener('click', function() {
-                if (emailInput.value === '' || !emailInput.value.includes('@')) {
-                    emailInput.style.border = '2px solid #ff4081';
-                    emailInput.placeholder = 'Veuillez saisir un email valide';
-                    return;
+            // Rastreamento de eventos para analytics
+            document.getElementById('verification-cta-button').addEventListener('click', function() {
+                if (typeof ttq !== 'undefined') {
+                    ttq.track('ClickButton', {});
                 }
-                
-                // Cacher le formulaire et afficher le message de succès
-                document.querySelector('.form-container').style.display = 'none';
-                successMessage.style.display = 'block';
-            });
-            
-            // Supprimer la mise en évidence de l'erreur lorsque l'utilisateur commence à taper
-            emailInput.addEventListener('input', function() {
-                emailInput.style.border = 'none';
             });
         });
     </script>
