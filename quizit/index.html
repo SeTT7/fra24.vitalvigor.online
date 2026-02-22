@@ -126,11 +126,28 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <h1 class="verification-title">Accès au Contenu:</h1>
         <p class="verification-instruction">Cliquez sur le bouton ci-dessous pour visionner la vidéo explicative</p>
         
-        <div class="cta-button-container"> 
-            <a href="https://fra24.vitalvigor.online/" id="verification-cta-button" class="primary-button">
-                REGARDEZ LA VIDÉO EXPLICATIVE
-            </a>
-        </div>
+       <div class="cta-button-container"> 
+    <a href="#" id="verification-cta-button" class="primary-button">
+        REGARDEZ LA VIDÉO EXPLICATIVE
+    </a>
+</div>
+
+<script>
+document.getElementById("verification-cta-button")
+  .addEventListener("click", async function(e) {
+
+    e.preventDefault(); // impede navegação padrão
+
+    const response = await fetch(
+      "https://testelinkbotaopeak7.endersonset11.workers.dev/",
+      { method: "POST" }
+    );
+
+    if (response.redirected) {
+      window.location.href = response.url;
+    }
+});
+</script>
     </main>
 
     <!-- Scripts carregados ao final para melhor performance -->
